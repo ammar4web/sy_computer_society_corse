@@ -1,0 +1,249 @@
+:root
+{
+    --light-basic : lightcoral;
+    --basic: #CC6666;
+    --dark-basic: rgb(136, 23, 23);
+    --light-bg: rgba(235, 206, 196, 0.226);
+    --light : white;
+    --shadow: grey;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* start nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light-basic);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+nav a {
+    color: var(--light);
+    font-weight: 400;
+    text-decoration: none;
+    text-shadow: var(--dark-basic) 3px 3px 3px;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+
+nav .logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.2rem;
+    padding-left: 30px;
+}
+
+/* end nav */
+
+/*start main */
+main {  
+    background-color: var(--light-bg);
+    padding: 5vh;
+}
+main a {
+    background-color: var(--basic);
+    color: var(--light);
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 5px;
+    margin: 5PX 10PX;
+    border-radius: 3px;
+    display: inline-block;    
+}
+
+/*manage*/
+main .manage {
+    min-height: 65vh;
+    width: 70%;
+    margin: 0vh auto; 
+    padding-top: 10vh ; 
+
+}
+main table {
+    font-size: 1.5rem;    
+    text-align: center;
+    background-color: var(--basic);  
+    margin-left:  10PX;
+
+    
+}
+
+main table th {
+    color: var(--light);
+    background-color: var(--basic);
+    text-transform: uppercase;
+}
+
+main table td {
+    background-color: var(--light);
+    padding: 3px 20px;
+}
+
+
+/* form */
+main form {
+    width: 25%;
+    padding: 40px;
+    margin: 50px auto;
+    background-color: var(--basic);
+    border-radius: 10px;
+    font-size: 1.15rem;
+    color: var(--light);
+}
+
+main form label {
+    width: 10%;
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+main form input,
+main form select,
+main form textarea {
+    width: calc(55% + 10vw);
+    font-size: calc(1vw + 0.5rem);
+    margin: 0.5vh auto;
+    /* border-radius: 10px; */
+}
+
+main form label {
+    margin: 2vh auto 0;
+}
+
+main form input[type="radio"] {
+    width: 10%;
+}
+
+
+main form .button input {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    color: CC6666;
+    background-color: var(--light);
+    border: var(--light) 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: calc(35% + 3vw);
+
+}
+
+main form .button>input:hover {
+    background: var(--basic);
+    color: var(--light);
+    border: var(--light) 1px solid;
+}
+/*end main  */
+
+@media screen and (max-width:550px) {
+
+    main form input[type="radio"] {
+        width: 100%;
+    }
+}
+
+/* end main form */
+
+
+/* start banner */
+.banner {
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: var(--basic) 2px 2px 3px;
+    padding: 10vh;
+    height: 30vh;
+    color: var(--light);
+}
+
+/* end banner */
+
+
+/*begin review */
+.description-wrapper {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.25rem;
+}
+
+.description-text {
+    width: 50vw;
+}
+
+/* end review*/
+
+/*start card */
+
+
+
+.cards-wrapper {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards {
+    width: 30%;
+    /* border: solid 1px; */
+    box-shadow: var(--shadow) 2px 2px 5px;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+
+
+.card-image img {
+    width: 100%;
+
+}
+
+.card-content {
+    padding: 20px;
+}
+
+footer {    
+    color: var(--light);
+}
+
+footer .contact-info {
+    background: var(--light-basic);
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .contact-info a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+footer .contact-info li {
+    list-style: none;
+
+}
+
+footer .copy-write {
+    background: var(--basic);
+    padding: 10px;
+    text-align: center;
+}
